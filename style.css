@@ -3,6 +3,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.h{
+    display: none;
+}
+
 .primary-color {
     color: #FD6E0A;
 }
@@ -255,6 +259,7 @@ footer{
 }
 
 
+
 .footer-title{
     Font-weight:700;
 font-size: 35px;
@@ -272,3 +277,135 @@ input{
     height: 64px;
 }
 
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+
+    /* sheared style */
+
+    .btn-primary {
+        background-color: #FD6E0A;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        Font-weight: 700;
+        Font-size: 12px;
+        
+        
+    }
+    
+
+    /* this is nav */
+
+    nav {
+        display: flex;
+        gap: 15px;
+        padding: 20px;
+        
+    }
+
+    .nav-title {
+
+        
+        Font-size: 25px;
+    
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        padding: 3px;
+        
+    }
+
+
+    nav li {
+        list-style: none;
+        margin-left: 10px;
+        Font-weight: 400;
+        Font-size: 15px;
+    
+    }
+
+
+    /* this is banner */
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        
+    }
+
+    .banner h4{
+        font-size: 25px;
+    }
+
+    .banner h2 {
+        
+        font-size: 65px;
+    
+    }
+
+    .banner button{
+        margin-top: 20px;
+    }
+    
+    .banner img{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* this is about me section */
+
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .about{
+    text-align: center;
+    border: 10px;
+    padding: 40px;
+}
+
+.about-container{
+    flex-direction: column;
+    
+}
+
+.about h5{
+    
+margin-left: 5px;
+
+}
+
+.skill-container{
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.resume-container{
+    flex-direction: column;
+}
+
+footer {
+    flex-direction: column;
+    margin: 20px;
+}
+
+footer input[type="text"], input[type="email"], textarea{
+    margin-bottom: 20px;
+    border: 0;
+    width: 100%;
+    padding: 10px 10px;
+    
+    background-color: white;
+}
+input{
+    height: 64px;
+}
+
+
+    
+}
