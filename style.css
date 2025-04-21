@@ -65,11 +65,17 @@ color: #757575;
 }
 
 /* header css */
-header{
-    background-image: url('/images/header_bg.png ' ),url('./images/developer.png');
-    background-repeat: no-repeat;
-    background-position: bottom right, calc(23px);
-}
+header {
+    background-image: url('/images/header_bg.png'), url('./images/developer.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, left bottom;
+    background-size: cover, auto 90%; /* developer.png er height fixed */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: auto; /* keeps header wrapping content */
+  }
+  
+  
 
 
 /* nav css */
@@ -142,6 +148,29 @@ Font-size:
 20px;
 margin-left: 30px;
 }
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 10px;
+  }
+  
+  .banner > div:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    vertical-align: top;
+  }
+  
+  
 
 /* this is main section */
 main {
